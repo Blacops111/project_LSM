@@ -18,6 +18,7 @@
                 <li><a href="{{ route('students.index') }}" class="hover:underline">Students</a></li>
                 <li><a href="{{ route('discussions.index') }}" class="hover:underline">Discussions</a></li>
                 <li><a href="{{ route('reports.index') }}" class="hover:underline">Reports</a></li>
+                <li><a href="{{ route('schedule.index') }}" class="hover:underline">Schedule</a></li>
                 <li><a href="{{ route('notifications.index') }}" class="hover:underline">Notifications</a></li>
                 <li>
                     <form action="{{ route('logout') }}" method="POST" class="inline">

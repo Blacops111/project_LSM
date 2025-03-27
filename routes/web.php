@@ -45,6 +45,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
     
     // Reports Management
     Route::resource('reports', ReportController::class);
+    Route::get('/reports/generate', [ReportController::class, 'generate'])->name('reports.generate');
     
     // Class Scheduling
     Route::resource('schedule', ClassScheduleController::class);
