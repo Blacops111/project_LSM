@@ -10,4 +10,9 @@ class Assignment extends Model
     use HasFactory;
 
     protected $fillable = ['title', 'description', 'due_date'];
+    
+    public function submissions()
+    {
+        return $this->hasMany(Submission::class, 'assignment_id');
+    }
 }
